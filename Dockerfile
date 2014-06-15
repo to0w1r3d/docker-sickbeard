@@ -8,6 +8,9 @@ RUN apt-get -q update
 RUN apt-mark hold initscripts udev plymouth mountall
 RUN apt-get -qy --force-yes dist-upgrade
 
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty universe multiverse" >> /etc/apt/sources.list
+RUN apt-get -q update
+
 RUN apt-get install -qy --force-yes python-cheetah
 RUN apt-get install -qy --force-yes wget tar ca-certificates curl
 RUN curl -L  -O https://github.com/midgetspy/Sick-Beard/tarball/master

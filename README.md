@@ -14,6 +14,4 @@ VOLUME /data
 
 VOLUME /tv
 
-VOLUME /share
-
-docker run -d -h your_host_name -v /your_config_location:/config -v /your_videos_location:/data -p 8081:8081 sickbeard
+docker run -d -h _hostname_ -v /_hostconfig_:/config -v /_hostdata_:/data -v /_hosttvlibrary_:/tv -p 8081:8081 sickbeard

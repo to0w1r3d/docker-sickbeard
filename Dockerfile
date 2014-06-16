@@ -19,7 +19,7 @@ RUN tar -xvf master -C /  && mv /midgetspy-Sick-Beard-* /sickbeard/
 VOLUME /config
 VOLUME /data
 VOLUME /tv
-VOLUME /share
+
 
 ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
